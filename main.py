@@ -42,6 +42,6 @@ while not stop_painting():
     draw_row()
     change_row(prev_pos)    
     index+=1
-    stop_painting()
+    
     
 screen.exitonclick()   
