@@ -36,12 +36,12 @@ def change_row(prev_pos):
 def stop_painting():
     return index==10
     
-stop=stop_painting()
-while not stop:
+
+while not stop_painting():
     prev_pos=turtle.pos()
     draw_row()
     change_row(prev_pos)    
     index+=1
-    stop=stop_painting()
+    stop_painting()
     
 screen.exitonclick()   
